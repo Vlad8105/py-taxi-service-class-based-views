@@ -17,7 +17,7 @@
       {% for driver in car.drivers.all %}
       <tr>
         <td>{{ driver.username }}</td>
-        <td><a href="{% url 'taxi:driver_detail' driver.pk %}">Link</a></td>
+        <td><a href="{% url 'taxi:driver-detail' driver.pk %}">Link</a></td>
       </tr>
       {% empty %}
       <tr>

@@ -23,7 +23,7 @@
         <td>{{ car.manufacturer.name }}</td>
         <td>{{ car.model }}</td>
         <td>
-          <a href="{% url 'taxi:car_detail' car.pk %}">Details link</a>
+          <a href="{% url 'taxi:car-detail' car.pk %}">Details link</a>
         </td>
       </tr>
       {% empty %}
