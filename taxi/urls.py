@@ -6,7 +6,6 @@ from .views import (index, CarListView,
 
 urlpatterns = [
     path("", index, name="index"),
-    path('taxi/', include('taxi.urls', namespace='taxi')),
     path(
         "manufacturers/", ManufacturerListView.as_view(),
         name="manufacturer_list"),
